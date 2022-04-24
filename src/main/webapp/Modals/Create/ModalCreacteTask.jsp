@@ -27,6 +27,14 @@
                         </select>
                     </div>
                     <div class="mb-3">
+                        <select class="form-select" name="priority" id="EditTaskPriority" required>
+                            <option value="" disabled selected hidden>Priority</option>
+                            <option value="high">high</option>
+                            <option value="medium">medium</option>
+                            <option value="low">low</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
                         <select class="form-select" name="participant_id" multiple id="participants-select" required>
                             <c:forEach var="participant" items="${listParticipant}">
                                 <option value="${participant.getParticipant_id()}">${participant.getName()}</option>
